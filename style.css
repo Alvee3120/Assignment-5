@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background: #1D201F;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1{
+    color: #F7EDE2;
+}
+
+.input_grp{
+    width: 80%;
+    display: flex;
+    column-gap: 5px;
+    margin: 25px;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    width: 100%;
+    border-bottom: 2px solid transparent;
+    transition: 0.2s;
+    font-size: 24px;
+    border-radius: 5px;
+    background: #F7EDE2;
+}
+input:focus{
+    outline: none;
+    border-bottom: 2px solid #2C497F;
+}
+button{
+    background: #2C497F;
+    color: white;
+    border: none;
+    border-bottom: 2px solid transparent;
+    outline: none;
+    font-size: 24px;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.table{
+    background: #F7EDE2;
+    width: 80%;
+    font-size: 24px;
+}

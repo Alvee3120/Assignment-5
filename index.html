@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grade Calc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Grade Calculator</h1>
+        <div class="input_grp">
+          <!-- Submit form -->
+          <!-- 
+            While submitting the form prevent the default event and take the
+            input to js and calculate and show grade accordingly. [TASK]
+
+            DO NOT CHANGE HTML TEMPLATE. WORK WITH THE GIVEN STRUCTURE.
+
+           -->
+          <form id="iits-formSubmit" class="d-flex w-100 justify-content-between">
+            <input type="number" id="iits-inp" class="me-2">
+            <button type="submit">Add</button>
+          </form>
+        </div>
+        <table class="table table-striped rounded">
+            <thead>
+              <tr>
+                <th scope="col">#</th>
+                <th scope="col">Grade</th>
+                <th scope="col">Count</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>A (81-100)</td>
+                <td id="iits-a_count">0</td>
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>B+ (71-80)</td>
+                <td id="iits-bp_count">0</td>
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>B (61-70)</td>
+                <td id="iits-b_count">0</td>
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>B- (51-60)</td>
+                <td id="iits-bm_count">0</td>
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>C (40-50)</td>
+                <td id="iits-c_count">0</td>
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>F (Less than 40)</td>
+                <td id="iits-f_count">0</td>
+              </tr>
+            </tbody>
+          </table>
+    </div>
+    <script src="./app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+</body>
+</body>
+
+</html>
